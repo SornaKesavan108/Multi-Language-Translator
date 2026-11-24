@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple multi-language translator with speech input and text-to-speech.">
+  <title>Multi-Language Translator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>TRANSLATOR TOOL</h1>
+
+    <div class="language-selectors">
+      <label>
+        <span>Translate from</span>
+        <select id="sourceLang" aria-label="Source language">
+          <option value="ta">Tamil</option>
+          <option value="te">Telugu</option>
+          <option value="kn">Kannada</option>
+          <option value="ml">Malayalam</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="it">Italian</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="zh">Chinese</option>
+          <option value="ar">Arabic</option>
+          <option value="hi">Hindi</option>
+          <option value="tr">Turkish</option>
+          <option value="nl">Dutch</option>
+          <option value="sv">Swedish</option>
+          <option value="pl">Polish</option>
+          <option value="th">Thai</option>
+          <option value="vi">Vietnamese</option>
+          <option value="el">Greek</option>
+          <option value="he">Hebrew</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Translate to</span>
+        <select id="targetLang" aria-label="Target language">
+          <option value="en">English</option>
+          <option value="ta">Tamil</option>
+          <option value="es">Spanish</option>
+          <option value="te">Telugu</option>
+          <option value="kn">Kannada</option>
+          <option value="ml">Malayalam</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="it">Italian</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="zh">Chinese</option>
+          <option value="ar">Arabic</option>
+          <option value="hi">Hindi</option>
+          <option value="tr">Turkish</option>
+          <option value="nl">Dutch</option>
+          <option value="sv">Swedish</option>
+          <option value="pl">Polish</option>
+          <option value="th">Thai</option>
+          <option value="vi">Vietnamese</option>
+          <option value="el">Greek</option>
+          <option value="he">Hebrew</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button type="button" class="secondary-btn" id="switchBtn">Switch Languages</button>
+      <button type="button" id="translateBtn">Translate</button>
+    </div>
+
+    <div class="text-area-grid">
+      <label class="text-box">
+        <span>Source text</span>
+        <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+      </label>
+      <label class="text-box">
+        <span>Translation</span>
+        <textarea id="targetText" placeholder="Translation will appear here..." readonly></textarea>
+      </label>
+    </div>
+
+    <div class="speech-buttons">
+      <button type="button" class="speak-btn" id="speakSourceBtn">🔊 Speak Source</button>
+      <button type="button" class="speak-btn" id="speakTargetBtn">🔊 Speak Translation</button>
+      <button type="button" class="speech-recognition-btn" id="speechBtn">🎤 Speak to Type</button>
+    </div>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <footer>&copy; 2025 | Built By: <span class="creator">KamalNath</span></footer>
+  </main>
+</body>
+</html>
